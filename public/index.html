@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUJET ET CORRIGES BACC TOUT SERIE</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <button id="close-sidebar"><i class="fas fa-times"></i></button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" class="sidebar-link" data-page="accueil">Accueil</a></li>
+                <li><a href="#" class="sidebar-link" data-page="sujet">Sujet</a></li>
+                <li><a href="#" class="sidebar-link" data-page="corrige">Corrigé</a></li>
+                <li><a href="#" class="sidebar-link" data-page="cours">Cours</a></li>
+                <li><a href="#" class="sidebar-link" data-page="contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div class="main-content">
+        <button id="toggle-sidebar" class="hamburger">
+            <i class="fas fa-bars"></i>
+        </button>
+        
+        <div class="container">
+            <h1>SUJET ET CORRIGES BACC TOUT SERIE</h1>
+            
+            <!-- Page d'accueil - Informations administrateur -->
+            <div class="page" id="accueil-page">
+                <div class="admin-info">
+                    <h2>Informations sur l'administrateur</h2>
+                    <p><strong>Nom:</strong> Bruno</p>
+                    <p><strong>Prénom:</strong> Rakotomalala</p>
+                    <p><strong>Contact:</strong> 0338764195</p>
+                </div>
+            </div>
+            
+            <!-- Page de contact -->
+            <div class="page" id="contact-page">
+                <div class="contact-info">
+                    <h2>Contact</h2>
+                    <p><strong>Téléphone:</strong> 0338764195</p>
+                </div>
+            </div>
+            
+            <!-- Page principale avec les filtres -->
+            <div class="page" id="main-page">
+                <div class="filters">
+                    <div class="filter-group">
+                        <h2>Matières</h2>
+                        <div class="buttons">
+                            <button class="btn matiere" data-matiere="HG">Histoire-Géographie</button>
+                            <button class="btn matiere" data-matiere="MLG">Malagasy</button>
+                            <button class="btn matiere" data-matiere="FRS">Français</button>
+                            <button class="btn matiere" data-matiere="PC">Physique-Chimie</button>
+                            <button class="btn matiere" data-matiere="MATH">Mathématiques</button>
+                            <button class="btn matiere" data-matiere="SVT">Sciences de la Vie et de la Terre</button>
+                            <button class="btn matiere" data-matiere="ANG">Anglais</button>
+                            <button class="btn matiere" data-matiere="PHILO">Philosophie</button>
+                        </div>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <h2>Séries</h2>
+                        <div class="buttons">
+                            <button class="btn serie active" data-serie="A">Série A</button>
+                            <button class="btn serie" data-serie="D">Série D</button>
+                            <button class="btn serie" data-serie="C">Série C</button>
+                            <button class="btn serie" data-serie="S">Série S</button>
+                            <button class="btn serie" data-serie="Ose">Série Ose</button>
+                            <button class="btn serie" data-serie="Let">Série L</button>
+                        </div>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <h2>Type</h2>
+                        <div class="buttons">
+                            <button class="btn type active" data-type="sujet">Sujets</button>
+                            <button class="btn type" data-type="correction">Corrigés</button>
+                            <button class="btn type" data-type="cours">Cours</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="documents">
+                    <h2 id="result-title">Veuillez sélectionner les filtres</h2>
+                    <div id="documents-list" class="documents-grid"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
